@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - reddit@139.59.131.10">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="reddit">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="Baso"/>
+    <schema id="3" name="dvwa"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="mysql"/>
+    <schema id="6" name="performance_schema"/>
+    <table id="7" parent="1" name="Reddit"/>
+    <column id="8" parent="7" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(14)|0</data-type>
+    </column>
+    <column id="9" parent="7" name="parent_id">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="10" parent="7" name="link_id">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="11" parent="7" name="name">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="12" parent="7" name="author">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="13" parent="7" name="body">
+      <data-type>mediumtext|0</data-type>
+    </column>
+    <column id="14" parent="7" name="subreddit_id">
+      <data-type>varchar(14)|0</data-type>
+    </column>
+    <column id="15" parent="7" name="subreddit">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="16" parent="7" name="score">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="17" parent="7" name="created_utc">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="18" parent="7" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
